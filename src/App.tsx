@@ -40,7 +40,9 @@ function App() {
             eventData={eventData}
         />
     ) : (
-        <div className="loader">LOADING...</div>
+        <div className="loader">
+            <div className="loader-text">LOADING...</div>
+        </div>
     );
 }
 

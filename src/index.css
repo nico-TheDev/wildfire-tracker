@@ -35,3 +35,25 @@ html {
     width: 30vw;
     font-family: "Arial";
 }
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.loader-text {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: beat 500ms infinite alternate;
+}
+
+@keyframes beat {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}

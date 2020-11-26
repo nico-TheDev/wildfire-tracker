@@ -13,7 +13,7 @@ const LocationInfo: React.FC<IProps> = ({ data }) => {
         <div className="info">
             <h4>ID:{data.id}</h4>
             <h4>TITLE:{data.title}</h4>
-            <p>DESCRIPTION:{data.description}</p>
+            <p>DESCRIPTION:{"NO DESCRIPTION" ?? data.description}</p>
         </div>
     );
 };
